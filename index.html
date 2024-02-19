@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML/CSS Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img class="img-logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="quiz logo">
+        </div>
+        <div class="title">
+            <h1>HTML/CSS Quiz</h1>
+        </div>
+        <div class="navigation">
+            <ul class="nav-list">
+                <li>
+                    <a href="#info">INFO</a>
+                </li>
+                <li>
+                    <a href="#html">HTML</a>
+                </li>
+                <li>
+                    <a href="#css">CSS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <form action="#" method="post">
+            <fieldset id="info" class="student-info">
+                <h2>Student Info</h2>
+                <div class="label-input">
+                    <label for="name">
+                        Name:
+                    </label>
+                    <input id="name" type="text">
+                </div>
+
+                <div class="label-input">
+                    <label for="email">
+                        Email:
+                    </label>
+                    <input id="email" type="email">
+                </div>
+
+                <div class="label-input">
+                    <label for="date">
+                        D.O.B.:
+                    </label>
+                    <input id="date" type="date">
+                </div>
+            </fieldset>
+            <fieldset id="html" class="html">
+                <h2>HTML</h2>
+                <p class="q-number">1</p>
+                <div class="question-1">
+                    <legend>
+                        The legend element represents a caption for the content of its parent fieldset element
+                    </legend>
+                    <label for="q1-a1">
+                        <input type="radio" id="q1-a1" name="q1-answer"> True
+                    </label>
+                    <label for="q1-a2">
+                        <input type="radio" id="q1-a2" name="q1-answer"> False
+                    </label>
+                </div>
+                <p class="q-number">2</p>
+                <div class="question-2">
+                    <legend>
+                        A label element nesting an input element is required to have a for attribute with the same value
+                        as
+                        the input's id
+                    </legend>
+                    <label for="q2-a1">
+                        <input type="radio" id="q2-a1" name="q2-answer"> True
+                    </label>
+                    <label for="q2-a2">
+                        <input type="radio" id="q2-a2" name="q2-answer"> False
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset id="css" class="css">
+                <h2>CSS</h2>
+
+                <div class="select">
+                    <label for="select">Can the CSS margin property accept negative values?
+                    </label>
+                    <select name="" id="select">
+                        <option value="1">Select an option</option>
+                        <option value="2">Yes</option>
+                        <option value="3">No</option>
+                    </select>
+                </div>
+
+                <div class="textarea">
+                    <label for="txt">
+                        Do you have any questions:
+                    </label>
+                    <textarea name="" id="txt" cols="24" rows="5" placeholder="Who is flexbox..."></textarea>
+                </div>
+            </fieldset>
+            <button type="submit" id="submit-btn">Send</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <a href="https://www.freecodecamp.org">freeCodeCamp</a>
+        <p>San Francisco</p>
+        <p>California</p>
+        <p>USA</p>
+    </footer>
+
+</body>
+
+</html>
